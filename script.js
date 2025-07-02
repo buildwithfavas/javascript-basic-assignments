@@ -175,40 +175,40 @@ const prompt = require('prompt-sync')();
 // }
 
 //14
-// const array1 = [];
-// const array2 = [];
-// const sumArray = [];
-// const size =parseInt(prompt("Enter the size of arrays: "));
-// console.log("Enter the values of array 1");
-// for(let i = 0; i < size; i++){
-//     const row = [];
-//     for(let j = 0; j < size; j++){
-//         const value = Number(prompt(`Enter [${i}][${j}] value: `));
-//         row.push(value);
-//     }
-//     array1.push(row);
-// }
-// console.log("Enter the values of array 2");
-// for(let i = 0; i < size; i++){
-//     const row = [];
-//     for(let j = 0; j < size; j++){
-//         const value = Number(prompt(`Enter [${i}][${j}] value: `));
-//         row.push(value);
-//     }
-//     array2.push(row);
-// }
-// for(let i = 0; i < size; i++){
-//     const row = [];
-//     for(let j = 0; j < size; j++){
-//         const value = array1[i][j] + array2[i][j];
-//         row.push(value);
-//     }
-//     sumArray.push(row);
-// }
-// console.log("Sum of 2 arrays is:");
-// for(let i = 0;i < size; i++){
-//     console.log(sumArray[i].join(" "));
-// }
+const array1 = [];
+const array2 = [];
+const sumArray = [];
+const size = parseInt(prompt("Enter the size of arrays: "));
+console.log("Enter the values of array 1");
+for(let i = 0; i < size; i++){
+    const row = [];
+    for(let j = 0; j < size; j++){
+        const value = Number(prompt(`Enter [${i}][${j}] value: `));
+        row.push(value);
+    }
+    array1.push(row);
+}
+console.log("Enter the values of array 2");
+for(let i = 0; i < size; i++){
+    const row = [];
+    for(let j = 0; j < size; j++){
+        const value = Number(prompt(`Enter [${i}][${j}] value: `));
+        row.push(value);
+    }
+    array2.push(row);
+}
+for(let i = 0; i < size; i++){
+    const row = [];
+    for(let j = 0; j < size; j++){
+        const value = array1[i][j] + array2[i][j];
+        row.push(value);
+    }
+    sumArray.push(row);
+}
+console.log("Sum of 2 arrays is:");
+for(let i = 0;i < size; i++){
+    console.log(sumArray[i].join(" "));
+}
 
 //15
 // function getArray(size){
@@ -598,21 +598,23 @@ const prompt = require('prompt-sync')();
 // console.log(myCar.max_speed);
 
 //29
-function myFilter(myArray, callback) {
-  let sum = 0;
-  for(let i = 0; i < myArray.length; i++) {
-    sum += myArray[i];
-  }
-  const isEven = callback(sum);
-  console.log(`Sum is ${sum} (${isEven ? "even" : "odd"})`);
-  return sum;
-}
+// function myFilter(myArray, callback) {
+//   let sum = 0;
+//   for(let i = 0; i < myArray.length; i++) {
+//     sum += myArray[i];
+//   }
+//   const isEven = callback(sum);
+//   console.log(`Sum is ${sum} (${isEven ? "even" : "odd"})`);
+//   return sum;
+// }
 
-function isSumEven(sum) {
-  return sum % 2 === 0;
-}
+// function isSumEven(sum) {
+//   return sum % 2 === 0;
+// }
 
-let num = "1234";
-let digits = num.split("").map(Number);
-let result = myFilter(digits, isSumEven);
-console.log(result);
+// let num = "1234";
+// let digits = num.split("").map(Number);
+// let result = myFilter(digits, isSumEven);
+// console.log(result);
+
+
